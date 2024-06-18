@@ -91,6 +91,7 @@
     "start": "npm run preparation && npm run copy-static && npm run copy-id-static && npm run patch-rapid && craco start",
     "build": "npm run preparation && npm run update-static && npm run update-id-static && npm run patch-rapid && craco build && npm run sentry:sourcemaps",
     "prettier": "prettier --write 'src/**/*.js'",
+    "cp:config": "cp staticwebapp.config.json build",
     "lint": "eslint src",
     "test": "npm run lint && craco test --env=jsdom",
     "coverage": "npm run test -- --coverage --watchAll=false",
