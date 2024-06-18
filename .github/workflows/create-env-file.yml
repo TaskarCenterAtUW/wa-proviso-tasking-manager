@@ -9,5 +9,6 @@ jobs:
         id: decode-base64
         with:
             base64: ${{ secrets.TM_DEV_ENV }}
+            output-path: task-manager.env
       - run: |
-            echo ${{ steps.decode-base64.outputs.decoded }}
+            cat task-manager.env
