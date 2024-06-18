@@ -22,7 +22,7 @@ jobs:
         id: decode-base64
         with:
             base64: ${{ secrets.TM_DEV_ENV }}
-            output-path: task-manager.env
+            output-path: tasking-manager.env
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
