@@ -10,5 +10,3 @@ jobs:
         with:
             base64: ${{ secrets.TM_DEV_ENV }}
             output-path: task-manager.env
-      - run: |
-            cat task-manager.env
