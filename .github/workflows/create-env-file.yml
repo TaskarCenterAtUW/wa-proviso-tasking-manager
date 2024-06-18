@@ -1,0 +1,16 @@
+name: Retrieve Base64 secret
+on:
+    workflow_dispatch:
+jobs:
+  decode-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve the secret and decode it to a file
+        env:
+          CERTIFICATE_BASE64: ${{ secrets.TM_DEV_ENV }}
+        run: |
+          echo $CERTIFICATE_BASE64 | base64 --decode > tm.env
+      - name: Display the secret
+        run: |
+                echo $CERTIFICATE_BASE64
