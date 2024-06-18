@@ -18,10 +18,10 @@ jobs:
           # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
       - name: Get the Environment file
         env:
-            TM_DEV_ENV: ${{ secrets.TM_DEV_ENV }}
+            TM_DEV_ENV_BASE64 : ${{ secrets.TM_DEV_ENV }}
         run:
             |
-            echo $TM_DEV_ENV | base64 --decode > tasking-manager.env
+            echo $TM_DEV_ENV_BASE64 | base64 --decode > tasking-manager.env
       - name: Move to frontend directory
         run: cd frontend
       - name: Use Node.js ${{ matrix.node-version }}
