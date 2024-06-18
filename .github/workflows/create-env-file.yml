@@ -5,12 +5,9 @@ jobs:
   decode-secret:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Retrieve the secret and decode it to a file
-        env:
-          CERTIFICATE_BASE64: ${{ secrets.TM_DEV_ENV }}
-        run: |
-          echo $CERTIFICATE_BASE64 | base64 --decode > tm.env
-      - name: Display the secret
-        run: |
-                echo $CERTIFICATE_BASE64
+      - uses: akiojin/decode-base64-github-action@v0.1.0
+        id: decode-base64
+        with:
+            base64: ${{ secrets.TM_DEV_ENV }}
+      - run: |
+            echo ${{ steps.decode-base64.outputs.decoded }}
