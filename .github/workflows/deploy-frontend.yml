@@ -16,12 +16,13 @@ jobs:
           submodules: true
       
           # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-      - name: Get the Environment file
-        env:
-            TM_DEV_ENV_BASE64 : ${{ secrets.TM_DEV_ENV }}
-        run:
-            |
-            echo $TM_DEV_ENV_BASE64
+      - uses: akiojin/decode-base64-github-action@v0.1.0
+        name: Retrieve environment file
+        id: decode-base64
+        with:
+          base64: ${{ secrets.TM_DEV_ENV }}
+          output-path: task-manager.env
+       
       - name: Move to frontend directory
         run: cd frontend
       - name: Use Node.js ${{ matrix.node-version }}
