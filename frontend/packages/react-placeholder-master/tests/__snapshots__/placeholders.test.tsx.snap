@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`placeholder MediaBlock renders a MediaBlock 1`] = `
+[
+  <div
+    className="media-block"
+    style={
+      {
+        "display": "flex",
+      }
+    }
+  >
+    <RoundShape
+      color="rebeccapurple"
+      style={
+        {
+          "marginRight": 10,
+          "minHeight": 55,
+          "minWidth": 55,
+          "width": 55,
+        }
+      }
+    />
+    <TextBlock
+      color="rebeccapurple"
+      rows={2}
+    />
+  </div>,
+]
+`;
+
+exports[`placeholder MediaBlock renders a MediaBlock with custom styles and classNames 1`] = `
+[
+  <div
+    className="media-block test more-classes"
+    style={
+      {
+        "backgroundColor": "hotpink",
+        "display": "block",
+      }
+    }
+  >
+    <RoundShape
+      color="rebeccapurple"
+      style={
+        {
+          "marginRight": 10,
+          "minHeight": 55,
+          "minWidth": 55,
+          "width": 55,
+        }
+      }
+    />
+    <TextBlock
+      color="rebeccapurple"
+      rows={2}
+    />
+  </div>,
+]
+`;
+
+exports[`placeholder RectShape renders a RectShape 1`] = `
+[
+  <div
+    className="rect-shape"
+    style={
+      {
+        "backgroundColor": undefined,
+        "height": "100%",
+        "marginRight": 10,
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder RectShape renders a RectShape with custom styles, classNames, and color 1`] = `
+[
+  <div
+    className="rect-shape test more-classes"
+    style={
+      {
+        "backgroundColor": "hotpink",
+        "height": "50%",
+        "marginRight": 5,
+        "width": "50%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder RoundShape renders a RoundShape 1`] = `
+[
+  <div
+    className="round-shape"
+    style={
+      {
+        "backgroundColor": "rebeccapurple",
+        "borderRadius": "500rem",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder RoundShape renders a RoundShape with custom styles and classNames 1`] = `
+[
+  <div
+    className="round-shape test more-classes"
+    style={
+      {
+        "backgroundColor": "hotpink",
+        "borderRadius": "2px",
+        "height": "50%",
+        "width": "50%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder TextBlock renders a TextBlock 1`] = `
+[
+  <div
+    className="text-block"
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <TextRow
+      color="rebeccapurple"
+      lineSpacing={0}
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "97%",
+        }
+      }
+    />
+    <TextRow
+      color="rebeccapurple"
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>,
+]
+`;
+
+exports[`placeholder TextBlock renders a TextBlock with custom lineSpacing and widths 1`] = `
+[
+  <div
+    className="text-block"
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <TextRow
+      color="rebeccapurple"
+      lineSpacing={0}
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "10%",
+        }
+      }
+    />
+    <TextRow
+      color="rebeccapurple"
+      lineSpacing={1.5}
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "12%",
+        }
+      }
+    />
+  </div>,
+]
+`;
+
+exports[`placeholder TextBlock renders a TextBlock with custom styles and classNames 1`] = `
+[
+  <div
+    className="text-block test more-classes"
+    style={
+      {
+        "backgroundColor": "hotpink",
+        "width": "50%",
+      }
+    }
+  >
+    <TextRow
+      color="rebeccapurple"
+      lineSpacing={0}
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "97%",
+        }
+      }
+    />
+    <TextRow
+      color="rebeccapurple"
+      style={
+        {
+          "maxHeight": "33.333333333333336%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>,
+]
+`;
+
+exports[`placeholder TextRow renders a TextRow 1`] = `
+[
+  <div
+    className="text-row"
+    style={
+      {
+        "backgroundColor": "rebeccapurple",
+        "height": "1em",
+        "marginTop": "0.7em",
+        "maxHeight": undefined,
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder TextRow renders a TextRow with a lineSpacing of 0 1`] = `
+[
+  <div
+    className="text-row"
+    style={
+      {
+        "backgroundColor": "rebeccapurple",
+        "height": "1em",
+        "marginTop": 0,
+        "maxHeight": undefined,
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder TextRow renders a TextRow with custom maxHeight and lineSpacing 1`] = `
+[
+  <div
+    className="text-row"
+    style={
+      {
+        "backgroundColor": "rebeccapurple",
+        "height": "1em",
+        "marginTop": "5rem",
+        "maxHeight": 123,
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`placeholder TextRow renders a TextRow with custom styles and classNames, overriding set maxHeight and lineSpacing 1`] = `
+[
+  <div
+    className="text-row test more-classes"
+    style={
+      {
+        "backgroundColor": "hotpink",
+        "height": "5em",
+        "marginTop": 2,
+        "maxHeight": 50,
+        "width": "50%",
+      }
+    }
+  />,
+]
+`;
