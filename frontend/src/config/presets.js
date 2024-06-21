@@ -1,16 +1,42 @@
 export const ID_PRESETS = {
-  'category-roads-barrier': {
-    name: 'Barrier Features',
-    members: [
-      'barrier/fence',
-      'barrier/wall',
-      'barrier/ditch',
-      'barrier/gate',
-      'barrier/hedge',
+  // 'category-roads-barrier': {
+  //   name: 'Barrier Features',
+  //   members: [
+  //     'barrier/fence',
+  //     'barrier/wall',
+  //     'barrier/ditch',
+  //     'barrier/gate',
+  //     'barrier/hedge',
+  //     'barrier/kerb',
+  //     'barrier',
+  //   ],
+  // },
+  'category-barrier':{
+    name: 'Barrier Point Features',
+    members:[
       'barrier/kerb',
-      'barrier',
-    ],
+      'barrier/kerb/lowered',
+      'barrier/kerb/flush',
+      'barrier/kerb/lowered',
+      'barrier/kerb/rolled'
+    ]
   },
+  'category-path':{
+    name: 'Sidewalk Features',
+    members:[
+      'highway/footway/sidewalk',
+      'highway/footway/marked',
+      'highway/pedestrian_line',
+      'highway/steps',
+    ]
+  },
+  'category-road_minor':{
+    name: 'Minor Roads',
+    members:[
+      'highway/living_street',
+    ]
+  },
+
   'category-building': {
     name: 'Building Features',
     members: [
