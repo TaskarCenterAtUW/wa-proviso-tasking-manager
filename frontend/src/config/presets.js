@@ -98,6 +98,7 @@ export const ID_PRESETS = {
       'highway/cycleway',
       'highway/bridleway',
       'highway/pedestrian_line',
+      'highway/footway/crossing'
     ],
   },
   'category-other-rail': {
