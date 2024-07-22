@@ -119,9 +119,9 @@ export function getTaskAction(user, project, taskStatus, userTeams = [], userOrg
   if (mappingIsPossible) {
     return getMessageOnMappingContext(taskStatus);
   }
-  if (project.percentMapped >= 100) {
-    return 'mappingIsComplete';
-  }
+  // if (project.percentMapped >= 100) {
+  //   return 'mappingIsComplete';
+  // }
   return 'selectAnotherProject';
 }
 
