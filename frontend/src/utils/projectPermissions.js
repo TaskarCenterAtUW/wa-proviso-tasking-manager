@@ -111,7 +111,7 @@ export function getTaskAction(user, project, taskStatus, userTeams = [], userOrg
   }
   const validationIsPossible = userCanValidate(user, project, userTeams, userOrgs);
   const mappingIsPossible =
-    userCanMap(user, project, userTeams, userOrgs) && project.percentMapped < 100;
+    userCanMap(user, project, userTeams, userOrgs);// && project.percentMapped < 100;
 
   if (validationIsPossible) {
     return getMessageOnValidationContext(mappingIsPossible, taskStatus);
