@@ -9637,3 +9637,32 @@
 .ideditor path.line.casing.tag-pedestrian {
     stroke: #464D50 !important;
 }
+
+/* Addition for Tasking Manager AI */
+.ideditor path.way.line.stroke.tag-surface {
+    stroke-width: 1;
+    fill:#00ca07;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-shells {
+    fill: #E4572E;
+    stroke: #3d6c71;
+    stroke-width: 1;
+    opacity: 0.4;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-cobblestone {
+  fill: #17BEBB;
+  opacity: 0.4;
+}
+
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-bark {
+  fill: #FFC914;
+  opacity: 0.4;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-paved {
+  fill: #72DDF7;
+  opacity: 0.4;
+}
