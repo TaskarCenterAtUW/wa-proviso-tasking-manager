@@ -23,30 +23,28 @@
 }
 
 /* Addition for Tasking Manager AI */
-/* .ideditor path.way.line.stroke.tag-surface {
-    stroke-width: 1;
-    fill:#00ca07;
+ .ideditor path.way.line.stroke.tag-surface {
+    stroke-width: 6;
+    /* fill:#00ca07; */
 }
 
 .ideditor path.way.line.stroke.tag-surface.tag-surface-shells {
-    fill: #E4572E;
-    stroke: #3d6c71;
-    stroke-width: 1;
-    opacity: 0.4;
+    stroke: #E4572E;
+    stroke-width: 6;
 }
 
 .ideditor path.way.line.stroke.tag-surface.tag-surface-cobblestone {
-  fill: #17BEBB;
-  opacity: 0.4;
+  stroke: #17BEBB;
+  stroke-width: 6;
 }
 
 
 .ideditor path.way.line.stroke.tag-surface.tag-surface-bark {
-  fill: #FFC914;
-  opacity: 0.4;
+  stroke: #FFC914;
+  stroke-width: 6;
 }
 
 .ideditor path.way.line.stroke.tag-surface.tag-surface-paved {
-  fill: #72DDF7;
-  opacity: 0.4;
-} */
+  stroke: #72DDF7;
+  stroke-width: 6;
+} 
