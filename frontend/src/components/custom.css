@@ -1,0 +1,52 @@
+/* Patch for WA Proviso-project */
+
+.ideditor path.line.stroke.tag-highway-footway.tag-crossing-marked {
+    stroke: #6C6F77 !important;
+}
+.ideditor path.line.casing.tag-highway-footway.tag-crossing-marked {
+    stroke: #ffffff !important;
+}
+
+.ideditor path.casing.tag-highway-footway.tag-footway-sidewalk {
+    stroke: #D196B1 !important;
+}
+.ideditor path.stroke.tag-highway-footway.tag-footway-sidewalk {
+    stroke: #ffffff !important;
+}
+.ideditor path.line.stroke.tag-highway-pedestrian,
+.ideditor path.line.stroke.tag-pedestrian {
+    stroke: #ffffff !important;
+}
+.ideditor path.line.casing.tag-highway-pedestrian,
+.ideditor path.line.casing.tag-pedestrian {
+    stroke: #464D50 !important;
+}
+
+/* Addition for Tasking Manager AI */
+.ideditor path.way.line.stroke.tag-surface {
+    stroke-width: 1;
+    fill:#00ca07;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-shells {
+    fill: #E4572E;
+    stroke: #3d6c71;
+    stroke-width: 1;
+    opacity: 0.4;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-cobblestone {
+  fill: #17BEBB;
+  opacity: 0.4;
+}
+
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-bark {
+  fill: #FFC914;
+  opacity: 0.4;
+}
+
+.ideditor path.way.line.stroke.tag-surface.tag-surface-paved {
+  fill: #72DDF7;
+  opacity: 0.4;
+}
