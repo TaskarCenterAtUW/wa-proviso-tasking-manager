@@ -48,3 +48,29 @@
   stroke: #72DDF7;
   stroke-width: 6;
 } 
+
+.ideditor path.way.line.stroke.tag-custom.tag-custom-sidewalk {
+  stroke: #f6634f;
+  stroke-width: 6;
+}
+
+.ideditor path.way.line.stroke.tag-custom.tag-custom-crossing {
+  stroke: #17BEBB;
+  stroke-width: 6;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-bike-lane {
+  stroke: #201E50;
+  stroke-width: 6;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-bike-driveway {
+  stroke: #FF57BB;
+  stroke-width: 6;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-white-stripped-buffer {
+  stroke: #264027;
+  stroke-width: 6;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-tactile-paving {
+  stroke: #8A89C0;
+  stroke-width: 6;
+}
