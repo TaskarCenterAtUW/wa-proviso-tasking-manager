@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useIntl } from 'react-intl';
 import { gpx } from '@tmcw/togeojson';
-import * as iD from '@TC/id';
-import '@TC/id/dist/iD.css';
+import * as iD from 'gaussian-id';
+import 'gaussian-id/dist/iD.css';
 import './custom.css';
 
 import { OSM_CLIENT_ID, OSM_CLIENT_SECRET, OSM_REDIRECT_URI, OSM_SERVER_URL } from '../config';
@@ -26,7 +26,7 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
         iDContext.background().baseLayerSource(customSource.template(imagery));
         setCustomImageryIsSet(true);
         // this line is needed to update the value on the custom background dialog
-        window.iD.prefs('background-custom-template', imagery);
+        iD.prefs('background-custom-template', imagery);
       } else {
         const imagerySource = iDContext.background().findSource(imagery);
         if (imagerySource) {
@@ -41,7 +41,7 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
       if (iDContext === null) {
         // we need to keep iD context on redux store because iD works better if
         // the context is not restarted while running in the same browser session
-        dispatch({ type: 'SET_EDITOR', context: window.iD.coreContext() });
+        dispatch({ type: 'SET_EDITOR', context: iD.coreContext() });
       }
     }
   }, [windowInit, iDContext, dispatch]);
@@ -57,12 +57,12 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
       // if presets is not a populated list we need to set it as null
       try {
         if (presets.length) {
-          window.iD.presetManager.addablePresetIDs(presets);
+          iD.presetManager.addablePresetIDs(presets);
         } else {
-          window.iD.presetManager.addablePresetIDs(null);
+          iD.presetManager.addablePresetIDs(null);
         }
       } catch (e) {
-        window.iD.presetManager.addablePresetIDs(null);
+        iD.presetManager.addablePresetIDs(null);
       }
       // setup the context
       iDContext

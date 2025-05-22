@@ -1,6 +1,12 @@
 module.exports = {
   webpack: {
     configure: (webpackConfig, { env, paths }) => {
+      // ✅ Fix ESM fully specified imports (e.g., lodash-es/throttle)
+      webpackConfig.resolve = {
+        ...(webpackConfig.resolve || {}),
+        fullySpecified: false, // ⬅️ this is the key line
+        extensions: ['.js', '.json'], // optional but helpful
+      };
       // Fix CRA #11770
       const rules = webpackConfig.module.rules;
       for (const rule of rules) {
