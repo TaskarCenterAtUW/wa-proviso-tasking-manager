@@ -74,3 +74,19 @@
   stroke: #8A89C0;
   stroke-width: 6;
 }
+
+.ideditor path.way.line.stroke.tag-custom.tag-custom-sidewalk.tag-visited {
+  stroke: #3abd59;
+  stroke-width: 6;
+  stroke-dasharray: 10,10;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-sidewalk.tag-unvisited {
+  stroke: #e9606e;
+  stroke-width: 6;
+  stroke-dasharray: 10,10;
+}
+.ideditor path.way.line.stroke.tag-custom.tag-custom-sidewalk.tag-unknown {
+  stroke: #747a81;
+  stroke-width: 6;
+  stroke-dasharray: 10,10;
+}
