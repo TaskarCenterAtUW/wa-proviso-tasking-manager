@@ -260,9 +260,10 @@ const mapEditorNewFields = {
   }
 };
 
-const mapEditorAddedPresets = ['highway/tertiary', 'highway/residential'];
+const mapEditorAddedPresets = ['highway/tertiary', 'highway/residential', 'highway/primary', 
+  'highway/secondary', 'highway/motorway', 'highway/service', 'highway/trunk'];
 
 export const ID_PRESETS_OVERRIDES = {
-   presets: ['highway/tertiary', 'highway/residential'],
+   presets: mapEditorAddedPresets,
    fields: mapEditorNewFields
 }

@@ -87,3 +87,15 @@
   stroke: #747a81;
   stroke-width: 6;
 }
+
+/* Colors for road side elements tagging */
+
+/* Matches if it's the only class OR the first class */
+[class^="highway-roadside-left-"], 
+/* Matches if it appears later in a list of multiple classes */
+[class*="highway-roadside-left-"],
+[class*="highway-paved-shoulder-left-"]
+ {
+  stroke: #036D19 !important;
+  /* fill: #ff0000 !important; */
+}
