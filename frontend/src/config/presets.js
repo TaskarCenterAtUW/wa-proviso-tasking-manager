@@ -231,3 +231,38 @@ export const ID_PRESETS = {
     members: ['ford'],
   },
 };
+
+// Adding custom fields for Proviso project
+const mapEditorNewFields = {
+  'proviso/roadside_left': {
+    key: 'roadside:left',
+    type: 'combo',
+    overrideLabel: 'Roadside (left)',
+    options: ['yes', 'no', 'unknown']
+  },
+  'proviso/paved_shoulder_right': {
+    key: 'paved_shoulder:right',
+    type: 'combo',
+    overrideLabel: 'Paved shoulder (right)',
+    options: ['yes', 'no', 'unknown']
+  },
+  'proviso/unpaved_shoulder_left': {
+    key: 'unpaved_shoulder:left',
+    type: 'combo',
+    overrideLabel: 'Unpaved shoulder (left)',
+    options: ['yes', 'no', 'unknown']
+  },
+  'proviso/sideslope_right': {
+    key: 'sideslope:right',
+    type: 'combo',
+    overrideLabel: 'Sideslope (right)',
+    options: ['yes', 'no', 'unknown']
+  }
+};
+
+const mapEditorAddedPresets = ['highway/tertiary', 'highway/residential'];
+
+export const ID_PRESETS_OVERRIDES = {
+   presets: ['highway/tertiary', 'highway/residential'],
+   fields: mapEditorNewFields
+}

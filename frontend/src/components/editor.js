@@ -7,6 +7,7 @@ import 'gaussian-id/dist/iD.css';
 import './custom.css';
 
 import { OSM_CLIENT_ID, OSM_CLIENT_SECRET, OSM_REDIRECT_URI, OSM_SERVER_URL } from '../config';
+import {ID_PRESETS_OVERRIDES} from '../config/presets';
 import messages from './messages';
 
 export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }) {
@@ -46,6 +47,31 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
     }
   }, [windowInit, iDContext, dispatch]);
 
+  // Added function for custom presets
+  async function addCustomPresets() {
+    try {
+      if(iDContext === null) {
+        console.log('iDContext is null, cannot add custom presets');
+        return;
+      }
+    } catch (e) {
+      console.log('Error adding custom presets', e);
+      return;
+    }
+    await iD.presetManager.ensureLoaded();
+    const rawPresets = iD.fileFetcher.cache().preset_presets;
+    const updates = {};
+    for (const presetId of ID_PRESETS_OVERRIDES.presets) {
+      const preset = rawPresets[presetId];
+      updates[presetId] = {
+        ...preset,
+        fields: [...Object.keys(ID_PRESETS_OVERRIDES.fields), ...(preset.fields ?? [])]
+      };
+    }
+    await iD.presetManager.updatePresets(updates, {fields:ID_PRESETS_OVERRIDES.fields}); 
+  }
+
+
   useEffect(() => {
     if (iDContext && comment) {
       iDContext.defaultChangesetComment(comment);
@@ -63,6 +89,13 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
         }
       } catch (e) {
         iD.presetManager.addablePresetIDs(null);
+      }
+      try {
+        if (ID_PRESETS_OVERRIDES.presets.length) {
+          addCustomPresets();
+        }
+      } catch (e) {
+         console.log('Error adding custom presets', e);
       }
       // setup the context
       iDContext
