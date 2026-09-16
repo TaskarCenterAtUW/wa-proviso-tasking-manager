@@ -99,3 +99,43 @@
   stroke: #036D19 !important;
   /* fill: #ff0000 !important; */
 }
+
+
+/* Styles for road elements */
+.ideditor path.line.stroke.tag-element-type-outer_strip {
+  stroke: #00DCFF;
+  stroke-width: 8;
+}
+
+.ideditor path.line.stroke.tag-element-type-lane_marking {
+  stroke: #FFFF00;
+  stroke-width: 6;
+}
+
+.ideditor path.line.stroke.tag-element-type-verge {
+  stroke: #FF00FF;
+  stroke-width: 6;
+}
+
+/* Styles for ext-addition/deletion tags */
+
+.ideditor path.way.line.stroke.tag-ext-addition
+ {
+  stroke: rgb(64, 152, 64);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.ideditor path.way.line.stroke.tag-ext-deletion {
+  stroke: rgb(231, 70, 70);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.tag-ext-addition {
+  stroke: green;
+}
+
+.tag-ext-deletion {
+  stroke:  rgb(231, 70, 70);
+}
