@@ -9681,3 +9681,26 @@
   stroke: #FF00FF;
   stroke-width: 6;
 }
+
+/* Styles for ext-addition/deletion tags */
+
+.ideditor path.way.line.stroke.tag-ext-addition
+ {
+  stroke: rgb(64, 152, 64);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.ideditor path.way.line.stroke.tag-ext-deletion {
+  stroke: rgb(231, 70, 70);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.tag-ext-addition {
+  stroke: green;
+}
+
+.tag-ext-deletion {
+  stroke:  rgb(231, 70, 70);
+}
