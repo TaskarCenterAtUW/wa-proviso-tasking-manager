@@ -226,6 +226,18 @@ export const ID_PRESETS = {
       'place/town',
     ],
   },
+  'proviso-road-elements': {
+    name: "Proviso Road Elements",
+    members: [
+       "proviso-road-elements/outer_strip",
+        "proviso-road-elements/verge",
+        "proviso-road-elements/lane_marking",
+        "proviso-road-elements/lane_marking_turn_lane",
+        "proviso-road-elements/lane_marking_bike_lane",
+        "proviso-road-elements/hov_lane",
+        "proviso-road-elements/only_lane"
+    ],
+  },
   'category-others': {
     name: 'Others',
     members: ['ford'],
