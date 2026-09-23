@@ -1,25 +1,50 @@
+
+/* Styles for ext-addition/deletion tags */
+
+.ideditor path.way.line.stroke.tag-ext-addition
+ {
+  stroke: rgb(64, 152, 64);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.ideditor path.way.line.stroke.tag-ext-deletion {
+  stroke: rgb(231, 70, 70);
+  stroke-width: 10;
+  stroke-dasharray: 3, 3;
+}
+
+.tag-ext-addition {
+  stroke: green;
+}
+
+.tag-ext-deletion {
+  stroke:  rgb(231, 70, 70);
+}
+
+
 /* Patch for WA Proviso-project */
 
 .ideditor path.line.stroke.tag-highway-footway.tag-crossing-marked {
-    stroke: #6C6F77 !important;
+    stroke: #6C6F77 ;
 }
 .ideditor path.line.casing.tag-highway-footway.tag-crossing-marked {
-    stroke: #ffffff !important;
+    stroke: #ffffff ;
 }
 
 .ideditor path.casing.tag-highway-footway.tag-footway-sidewalk {
-    stroke: #D196B1 !important;
+    stroke: #D196B1 ;
 }
 .ideditor path.stroke.tag-highway-footway.tag-footway-sidewalk {
-    stroke: #ffffff !important;
+    stroke: #ffffff ;
 }
 .ideditor path.line.stroke.tag-highway-pedestrian,
 .ideditor path.line.stroke.tag-pedestrian {
-    stroke: #ffffff !important;
+    stroke: #ffffff ;
 }
 .ideditor path.line.casing.tag-highway-pedestrian,
 .ideditor path.line.casing.tag-pedestrian {
-    stroke: #464D50 !important;
+    stroke: #464D50 ;
 }
 
 /* Addition for Tasking Manager AI */
@@ -117,25 +142,3 @@
   stroke-width: 6;
 }
 
-/* Styles for ext-addition/deletion tags */
-
-.ideditor path.way.line.stroke.tag-ext-addition
- {
-  stroke: rgb(64, 152, 64);
-  stroke-width: 10;
-  stroke-dasharray: 3, 3;
-}
-
-.ideditor path.way.line.stroke.tag-ext-deletion {
-  stroke: rgb(231, 70, 70);
-  stroke-width: 10;
-  stroke-dasharray: 3, 3;
-}
-
-.tag-ext-addition {
-  stroke: green;
-}
-
-.tag-ext-deletion {
-  stroke:  rgb(231, 70, 70);
-}
