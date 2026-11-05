@@ -109,7 +109,9 @@ export default function Editor({ setDisable, comment, presets, imagery, gpxUrl }
         iDContext.reset();
         iDContext.ui().restart();
       } else {
-        iDContext.init();
+        iDContext.init({
+  panoramaxApiUrl: 'https://wa-panoramax-c0hah9f6hfgqf8ee.westus-01.azurewebsites.net/'
+});
       }
       if (gpxUrl) {
         fetch(gpxUrl)
